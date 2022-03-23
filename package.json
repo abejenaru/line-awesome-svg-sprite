@@ -1,6 +1,6 @@
 {
   "name": "line-awesome-svg-sprite",
-  "version": "0.1",
+  "version": "0.2",
   "description": "Generate SVG sprites for Line Awesome icons",
   "main": "index.js",
   "author": "Andrei B.",
@@ -10,5 +10,9 @@
     "line-awesome": "^1.3.0",
     "mkdirp": "^1.0.4",
     "svg-sprite": "^1.5.3"
+  },
+  "scripts": {
+    "postinstall": "yarn upgrade-interactive --no-progress",
+    "build": "node index.js"
   }
 }
